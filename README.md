@@ -58,8 +58,9 @@ SELECT client_id ,
        MEUBLE AS ventes_meubles,
 FROM   (
                  SELECT    t.client_id,
-                           Sum(t.prod_price * t.prod_qty) AS ventes,
-                           p.product_type pr.
+                           t.prod_price, 
+                           t.prod_qty
+                           p.product_type
                  FROM      TRANSACTION t
                  LEFT JOIN PRODUCT_NOMENCLATURE p
                  ON        t.prop_id = p.product_id
