@@ -1,0 +1,8 @@
+# test pdf
+test_python_de.pdf
+
+# python virtual environement
+venv/*
+
+# pycharm
+.idea/*
